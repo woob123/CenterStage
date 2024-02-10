@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.CenterStage;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
@@ -38,7 +38,7 @@ public class Drivetrain{
         double x = pad.left_stick_x;
         double rx = pad.right_trigger - pad.left_trigger;
 
-        if(pad.square){
+        if(pad.left_bumper && pad.right_bumper){
             imu.resetYaw();
         }
 
